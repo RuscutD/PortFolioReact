@@ -1,0 +1,209 @@
+@keyframes float1 {
+    0% {
+        top: 105%;
+    }
+    50% {
+        top: 107%;
+    }
+    100% {
+        top: 105%;
+    }
+}
+
+@keyframes float2 {
+    0% {
+        top: 145%;
+    }
+    40% {
+        top: 145%;
+    }
+    50% {
+        top: 147%;
+    }
+    90% {
+        top: 147%;
+    }
+    100% {
+        top: 145%;
+    }
+}
+
+@keyframes float3 {
+    0% {
+        top: 150%;
+    }
+    50% {
+        top: 152%;
+    }
+    100% {
+        top: 150%;
+    }
+}
+
+@keyframes float4 {
+    0% {
+        top: 110%;
+    }
+    50% {
+        top: 112%;
+    }
+    100% {
+        top: 110%;
+    }
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #222831;
+
+    .bluewavesTop {
+        position: absolute;
+        top: 100vh;
+        width: 100vw;
+    }
+
+    .bluewavesBottom {
+        transform: rotate(180deg);
+        position: absolute;
+        bottom: -100vh;
+        width: 100vw;
+    }
+
+    .s1 {
+        position: absolute;
+        z-index: 0;
+        left: 5%;
+        top: 110%;
+        animation: float1 5s infinite;
+        transition: all 1.2s ease;
+
+        &:hover {
+            transform: rotate(399deg);
+        }
+    }
+    
+    .s2 {
+        position: absolute;
+        z-index: 0;
+        right: 25%;
+        top: 145%;
+        animation: float2 5s infinite;
+        transition: all 1.2s ease;
+
+        &:hover {
+            transform: rotate(-400deg);
+        }
+    }
+    
+    .s3 {
+        position: absolute;
+        opacity: 80%;
+        z-index: 0;
+        right: 5%;
+        top: 153%;
+        animation: float3 5s infinite;
+        transition: all 1.2s ease;
+
+        &:hover {
+            transform: rotate(-399deg);
+        }
+    }
+    
+    .s4 {
+        position: absolute;
+        z-index: 0;
+        right: 2%;
+        top: 110%;
+        width: 280px;
+        animation: float4 5s infinite;
+        transition: all 1.2s ease;
+
+        &:hover {
+            transform: rotate(1000deg);
+        }
+    }
+
+
+
+    .top {
+        z-index: 1;
+        gap: 40px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        hr {
+            width: 150px;
+            height: 5px;
+            border-radius: 999px;
+            background-color:  #595959;
+            border: none;
+        }
+        
+        h2 {
+            font-size: 30px;
+            width: 600px;
+            font-weight: lighter;
+            
+            .name {
+                font-size: 37px;
+                color: #979797;
+            }
+
+            .react {
+                color: #61DAFB;
+            }
+        }
+        h6 {   
+            color: #979797;
+            font-size: 14px;
+            a {
+                color: #979797;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    color: #808080;
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+            p {
+            font-size: 25px;
+            margin-top: 20px;
+            width: 800px;
+
+        }
+    }
+    .bottom {
+        position: absolute;
+        top: 182%;
+        display: flex;
+        color: white;
+        gap: 40px;
+    }
+
+    .etna-logo {
+        position: absolute;
+        right: 5%;
+        top: 186%;
+        transition: all 0.2s ease;
+
+        &:hover {
+            filter: brightness(80%)
+        }
+    }
+
+   
+}

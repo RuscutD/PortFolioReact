@@ -1,0 +1,98 @@
+.footer {
+    background: linear-gradient(to top, #1b222a 40%, #222831 100%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    .f1 {
+        position: absolute;
+        z-index: 0;
+        left: 5%;
+        top: 730%;
+        transition: all 1.2s ease;
+        filter: brightness(200%);
+    }
+
+    .f2 {
+        position: absolute;
+        z-index: 0;
+        right: 7%;
+        top: 700%;
+        transition: all 1.2s ease;
+        filter: brightness(200%);
+    }
+
+    .f3 {
+        position: absolute;
+        z-index: 0;
+        left: 15%;
+        top: 720%;
+        transition: all 1.2s ease;
+        filter: brightness(200%);
+    }
+
+    .thankYou {
+        margin-bottom: 70px;
+    }
+
+    .mail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 80px;
+        background-color: #333a44;
+        border-radius: 425px 234px 230px 36px; 
+        color: white;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: #546171;
+            letter-spacing: 2px;
+        }
+
+        a {
+            color: white;
+        }
+    }
+
+    .phone {
+        color: white;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        width: 200px;
+        height: 50px;
+        border: solid transparent 5px;
+
+        &:hover {
+            color: white;
+            border: solid #222831 5px;
+            letter-spacing: 2px;
+        }
+
+        a {
+            color: white;
+
+        }
+    }
+
+    p {
+        color: white;
+        font-size: 20px;
+    }   
+    
+    h5 {
+        color: #333a44;
+        position: absolute;
+        top: 796%;
+    }
+}

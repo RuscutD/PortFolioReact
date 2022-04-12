@@ -1,0 +1,130 @@
+@keyframes float9 {
+    0% {
+        top: 450%;
+    }
+    50% {
+        top: 446%;
+    }
+    100% {
+        top: 450%;
+    }
+}
+
+@keyframes float10 {
+    0% {
+        top: 410%;
+    }
+    50% {
+        top: 407%;
+    }
+    100% {
+        top: 410%;
+    }
+}
+
+.clickerGame {
+    background-color: #222831;
+    display: flex;
+
+    .s9 {
+        position: absolute;
+        z-index: 0;
+        left: 15%;
+        top: 450%;
+        animation: float9 5s infinite;
+    }
+
+    .s10 {
+        position: absolute;
+        z-index: 0;
+        left: 5%;
+        top: 410%;
+        animation: float10 5s infinite;
+        filter: brightness(150%);
+    }
+
+    .left {
+        height: 90%;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        .top {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            color: white;
+            padding: 50px;
+
+            h1 {
+                text-align: center;
+                font-size: 40px;
+                margin-bottom: 50px;
+                width: 500px;
+            }
+
+            p {
+                font-size: 20px;
+                width: 450px;
+                font-weight: lighter;
+            }
+        }
+        .bottom {
+            display: flex;
+            align-items: center;
+            color: white;
+
+            .Content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 70px;
+                    transition: all 0.2s ease;
+                    z-index: 2;
+
+                    &:hover {
+                        filter: brightness(150%);
+                        transform: rotate(5deg);
+                        width: 72px;
+                    }
+                }
+
+                h5 {
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+    iframe {
+        margin-top: 2%;
+        z-index: 1;
+        box-shadow: 0px 4px 4px rgba(14, 21, 28, 0.05);
+        border-radius: 16px 0 0 16px;
+        border: none;
+        filter: brightness(60%);
+        transition: all 0.2s ease-in;
+
+        width: 62%;
+        height: 90%;
+        position: absolute;
+        right: 0;
+
+        &:hover {
+            filter: brightness(100%);
+            width: 80%;
+            right: 10%;
+            border-radius: 16px;
+            box-shadow: 0px 4px 10px rgb(14, 21, 28);
+        }
+    }
+}

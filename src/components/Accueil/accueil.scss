@@ -1,0 +1,106 @@
+@keyframes floatArrow {
+    0% {
+        bottom: 3vh;
+        opacity: 1;
+    }
+    50% {
+        bottom: 4vh;
+        opacity: 0.5;
+    }
+    100% {
+        bottom: 3vh;
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.accueil {
+    background-color: #1b222a;
+
+    .accueilReact {
+        position: absolute;
+        opacity: 10%;
+        width: 45%;
+        right: 6%;
+        top: 10%;
+        z-index: 1;
+        animation: rotate infinite 30s;
+    }
+
+    .down-arrow {
+        position: absolute;
+        z-index: 1;
+        right: 2vw;
+        bottom: 3vh;
+        animation: floatArrow 2s infinite;
+        transition: all 0.2s ease;
+        width: 50px;
+
+        &:hover {
+            transform: rotate(360deg);
+            width: 55px;
+            opacity: 1;
+            animation: none;
+        }
+    }
+
+    .bluewavesBottom {
+        background: linear-gradient(to top, #1b222a 0%, rgba(255, 255, 255, 0) 100%), url(../../../public/assets/bluewaves.png);
+        background-size: cover;
+        transform: rotate(180deg);
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 170px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        
+        .content {
+            z-index: 3;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            
+            h1 {
+                font-size: 160px;
+                line-height: 150px;
+                letter-spacing: 10px;
+            }
+            .linkedin {
+                color: #64686f;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    color: #878f9d;
+                    border-bottom: 1px solid white;
+                }
+            }
+
+            span {
+                color: white;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    color: #55b9d5;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
